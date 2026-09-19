@@ -137,6 +137,8 @@ writeFileSync(
       shortage_total_t: Math.round(run.best.shortage_total_t * 10) / 10,
       end_horizon_reserve_days: Math.round(run.best.end_horizon_reserve_days),
       overpaid_t: Math.round(totalOverpay(run.cards).tons * 10) / 10,
+      required_intake_t_per_month: Math.round(run.best.required_intake_t_per_month * 10) / 10,
+      intake_capacity_assumed_t_per_month: run.best.plan.assumptions.intake_capacity_t_per_month,
       feasible_strategies: run.ranked.filter((e) => e.feasible).length,
       mc_shortage_probability: Math.round(run.mc.p_any_shortage * 1000) / 1000,
     })),
@@ -434,6 +436,28 @@ Earth-New. Выбрать оба оператор не может. Поэтом�
 четырёх сценариях решения, а плата за это — ${fmt(robust.price_of_robustness_mln)} млн у.е. приведённых расходов относительно
 самого дешёвого варианта стандартного сценария. Поведение рекомендованного плана по сценариям —
 в results/recommended_across_scenarios.csv.
+
+## Приёмная способность узла
+
+Учёт времени разгрузки. Организатор скорость приёма не задаёт, поэтому приёмная способность —
+допущение команды: узел принимает транспорт по одному, полный цикл приёма (стыковка, захолаживание
+магистралей, перекачка, отстой, расстыковка, подготовка порта) занимает пять суток, то есть шесть
+циклов в месяц по 7,5 т — 45 т/мес. Вывод строится не на самой величине, а на том, сколько приёма
+требует план.
+
+| Сценарий | Требуется, т/мес | Допущение, т/мес | Запас |
+|---|---|---|---|
+${runs
+  .map(
+    ({ label, run }) =>
+      `| ${label} | ${fmt(run.best.required_intake_t_per_month, 1)} | ${run.best.plan.assumptions.intake_capacity_t_per_month} | ${pct(1 - run.best.required_intake_t_per_month / run.best.plan.assumptions.intake_capacity_t_per_month)} |`,
+  )
+  .join(String.fromCharCode(10))}
+
+Ограничение сегодня не связывает ни в одном сценарии, но запас сокращается с ростом спроса. Это
+скрытое ограничение узла: если фактическая скорость приёма окажется ниже требуемой, план физически
+не принимается, и потребуется либо второй приёмный порт, либо более равномерный график поставок.
+Проверка ведётся помесячно и даёт нарушение INTAKE_EXCEEDED с указанием месяца и предела.
 
 ## Граница прочности плана стандартного сценария
 

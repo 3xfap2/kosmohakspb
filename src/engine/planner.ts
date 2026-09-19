@@ -167,6 +167,8 @@ export interface Evaluation {
   shortage_total_t: number;
   /** Доля объёма, идущего по каналам без take-or-pay, — простая мера гибкости плана. */
   flexibility_share: number;
+  /** Пиковый месячный приём плана: какая приёмная способность узлу нужна фактически. */
+  required_intake_t_per_month: number;
   /** Запас на конец 2040 года в днях спроса: показывает планы, доедающие резерв к концу горизонта. */
   end_horizon_reserve_days: number;
 }
@@ -195,6 +197,7 @@ export function evaluatePlan(plan: Plan, opts: { scenario_id?: string; variant?:
     capex_mln: result.totals.capex_mln,
     shortage_total_t: result.totals.shortage_total_t,
     flexibility_share: delivered > 0 ? flexible / delivered : 0,
+    required_intake_t_per_month: Math.max(...result.months.map((m) => m.delivered_t), 0),
     end_horizon_reserve_days: result.totals.end_horizon_reserve_days,
   };
 }

@@ -16,7 +16,8 @@
       "discount_t0": 2035,
       "lead_time_policy": "max",
       "emergency_base_share": 0.5,
-      "require_reservation_for_orders": true
+      "require_reservation_for_orders": true,
+      "intake_capacity_t_per_month": 45
     },
     "data_source": "data/*.csv и scenarios/*.yaml из стартового репозитория организатора",
     "calculation_rules": "docs/CALCULATION_RULES.md; контрольные примеры V01–V10 в validation/"

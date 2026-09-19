@@ -32,6 +32,7 @@ export interface PlanViolation {
     | 'CAPACITY_EXCEEDED'
     | 'ORDER_EXCEEDS_CAPACITY'
     | 'STORAGE_OVERFLOW'
+    | 'INTAKE_EXCEEDED'
     | 'CHANNEL_NOT_AVAILABLE'
     | 'ISRU_FINANCING_LATE'
     | 'TEAM_RULE_RESERVATION'
@@ -249,6 +250,22 @@ export function planViolations(result: SimulationResult, plan: Plan): PlanViolat
       limit: 2037,
       message: 'CAPEX Lunar-ISRU должен быть профинансирован до 2038 года',
     });
+
+  // Приёмная способность узла: поставка месяца должна быть физически принята.
+  // Ограничение введено командой, поэтому нарушение называет и сам предел.
+  const intakeLimit = plan.assumptions.intake_capacity_t_per_month;
+  if (intakeLimit > 0) {
+    for (const m of result.months) {
+      if (m.delivered_t > intakeLimit + 1e-6)
+        out.push({
+          code: 'INTAKE_EXCEEDED',
+          year: m.year,
+          actual: m.delivered_t,
+          limit: intakeLimit,
+          message: `Приём ${m.year}-${String(m.month).padStart(2, '0')}: ${m.delivered_t.toFixed(1)} т при приёмной способности узла ${intakeLimit} т/мес (допущение команды)`,
+        });
+    }
+  }
 
   for (const m of result.months) {
     if (m.overflow_t > 1e-6)

@@ -6,7 +6,7 @@ import { describe, expect, it } from 'vitest';
 import { CASE, SCENARIOS } from '../caseData';
 import { checkConstraints, planViolations } from '../constraints';
 import { emptyPlan, type Plan } from '../plan';
-import { searchStrategies } from '../planner';
+import { evaluatePlan, searchStrategies } from '../planner';
 import { availabilityFraction, demandFor, simulate } from '../simulate';
 import type { Scenario } from '../types';
 import { getYears } from '../caseData';
@@ -264,5 +264,37 @@ describe('Неполный контрактный период', () => {
     expect(full.available_fraction).toBe(1);
     // за неполный год платим половину того, что за полный при том же резерве
     expect(partial.reservation_payment_mln).toBeCloseTo(full.reservation_payment_mln * 0.5, 6);
+  });
+});
+
+describe('Приёмная способность узла', () => {
+  const best = searchStrategies({ scenario_id: 'BASE' })[0];
+
+  it('требуемый приём равен пиковому месяцу поставок', () => {
+    const peak = Math.max(...best.result.months.map((m) => m.delivered_t));
+    expect(best.required_intake_t_per_month).toBeCloseTo(peak, 6);
+  });
+
+  it('при допущении команды план в приёмную способность укладывается', () => {
+    expect(best.required_intake_t_per_month).toBeLessThan(best.plan.assumptions.intake_capacity_t_per_month);
+    expect(best.violations.filter((v) => v.code === 'INTAKE_EXCEEDED')).toHaveLength(0);
+  });
+
+  it('при заниженной приёмной способности нарушение называет месяц и предел', () => {
+    const tight = JSON.parse(JSON.stringify(best.plan)) as typeof best.plan;
+    tight.assumptions.intake_capacity_t_per_month = 20;
+    const evaluation = evaluatePlan(tight, { scenario_id: 'BASE' });
+    const hits = evaluation.violations.filter((v) => v.code === 'INTAKE_EXCEEDED');
+    expect(hits.length).toBeGreaterThan(0);
+    expect(evaluation.feasible).toBe(false);
+    expect(hits[0].limit).toBe(20);
+    expect(hits[0].message).toMatch(/20\d\d-\d\d/);
+  });
+
+  it('нулевая приёмная способность означает, что ограничение не задано', () => {
+    const off = JSON.parse(JSON.stringify(best.plan)) as typeof best.plan;
+    off.assumptions.intake_capacity_t_per_month = 0;
+    const evaluation = evaluatePlan(off, { scenario_id: 'BASE' });
+    expect(evaluation.violations.filter((v) => v.code === 'INTAKE_EXCEEDED')).toHaveLength(0);
   });
 });

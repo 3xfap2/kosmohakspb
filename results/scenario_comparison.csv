@@ -1,5 +1,5 @@
-scenario_id,label,strategy,feasible,discounted_cost_mln,total_cost_mln,capex_mln,cost_per_served_t,min_service_total,min_service_critical,shortage_total_t,end_horizon_reserve_days,overpaid_t,feasible_strategies,mc_shortage_probability
-BASE,Стандартный,ZBO 2036 + ISRU 2037,true,8715,10578,1430,7.61,1,1,0,45,0,36,0.228
-MANDATORY_STRESS,Обязательный стресс,ZBO 2036 + Earth-New 2035/2035,true,10563,13073,540,8.52,1,1,0,45,0,22,0.215
-LOW_DEMAND,Низкий спрос,ISRU 2037,true,6918,8374,1250,7.53,1,1,0,45,0,36,0.223
-HIGH_DEMAND,Высокий спрос,ZBO 2036 + ISRU 2037 + Earth-New 2035/2035,true,10720,13033,1790,7.79,1,1,0,45,0,33,0.235
+scenario_id,label,strategy,feasible,discounted_cost_mln,total_cost_mln,capex_mln,cost_per_served_t,min_service_total,min_service_critical,shortage_total_t,end_horizon_reserve_days,overpaid_t,required_intake_t_per_month,intake_capacity_assumed_t_per_month,feasible_strategies,mc_shortage_probability
+BASE,Стандартный,ZBO 2036 + ISRU 2037,true,8715,10578,1430,7.61,1,1,0,45,0,32.9,45,36,0.228
+MANDATORY_STRESS,Обязательный стресс,ZBO 2036 + Earth-New 2035/2035,true,10563,13073,540,8.52,1,1,0,45,0,37.8,45,22,0.215
+LOW_DEMAND,Низкий спрос,ISRU 2037,true,6918,8374,1250,7.53,1,1,0,45,0,27.2,45,36,0.223
+HIGH_DEMAND,Высокий спрос,ZBO 2036 + ISRU 2037 + Earth-New 2035/2035,true,10720,13033,1790,7.79,1,1,0,45,0,41.1,45,33,0.235

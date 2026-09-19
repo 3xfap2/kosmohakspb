@@ -92,6 +92,14 @@ export function Overview({ evaluation, plan, strategies, t }: TabProps) {
         />
         <Stat label="CAPEX" value={`${fmt(totals.capex_mln)} млн`} note="лимиты 1800 до 2037 и 2800 до 2040" />
         <Stat label="Запас на конец горизонта" value={`${fmt(totals.end_horizon_reserve_days)} дней`} note="норматив 45 дней на начало года" />
+        <Stat
+          label="Требуемый приём узла"
+          value={`${fmt(evaluation.required_intake_t_per_month, 1)} т/мес`}
+          note={`пиковый месяц плана при допущении ${plan.assumptions.intake_capacity_t_per_month} т/мес — запас ${fmtPct(
+            1 - evaluation.required_intake_t_per_month / plan.assumptions.intake_capacity_t_per_month,
+            0,
+          )}`}
+        />
       </div>
 
       {noInvest && noInvest.plan.plan_id !== plan.plan_id && (

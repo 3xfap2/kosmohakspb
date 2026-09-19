@@ -49,6 +49,17 @@ export interface TeamAssumptions {
    * Это TEAM_ASSUMPTION, а не ограничение организатора.
    */
   require_reservation_for_orders: boolean;
+  /**
+   * Приёмная способность узла, т/месяц. Учитывает время разгрузки поставки:
+   * узел принимает транспорт по одному, полный цикл приёма — стыковка,
+   * захолаживание магистралей, перекачка, отстой, расстыковка и подготовка порта.
+   *
+   * Организатор скорость приёма не задаёт, поэтому величина целиком TEAM_ASSUMPTION.
+   * Принятый расчёт: цикл приёма 5 суток, в месяце помещается 6 циклов, за цикл
+   * принимается до 7,5 т — итого 45 т/мес. Значение меняется в интерфейсе, а вывод
+   * строится не на нём самом, а на требуемой приёмной способности плана.
+   */
+  intake_capacity_t_per_month: number;
 }
 
 export interface Plan {
@@ -69,6 +80,7 @@ export const DEFAULT_ASSUMPTIONS: TeamAssumptions = {
   lead_time_policy: 'max',
   emergency_base_share: 0.5,
   require_reservation_for_orders: true,
+  intake_capacity_t_per_month: 45,
 };
 
 export const emptyPlan = (plan_id: string, scenario_id: string): Plan => ({

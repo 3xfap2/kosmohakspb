@@ -95,7 +95,7 @@ export async function rephraseWithLlm(
 
   if (!response.ok) {
     const text = await response.text().catch(() => '');
-    throw new Error(`Модель ответила ошибкой ${response.status}. ${text.slice(0, 160)}`);
+    throw new Error(explainHttpError(response.status, text));
   }
 
   const json = (await response.json()) as { choices?: { message?: { content?: string } }[] };
@@ -106,12 +106,31 @@ export async function rephraseWithLlm(
 
 const KEY_STORAGE = 'kk.llm';
 
+/**
+ * Человеческое объяснение вместо сырого JSON: на защите нужно понимать, что делать,
+ * а не читать тело ответа провайдера.
+ */
+function explainHttpError(status: number, body: string): string {
+  const detail = body.slice(0, 140).replace(/\s+/g, ' ').trim();
+  if (status === 401)
+    return 'Ключ отклонён провайдером (401). Проверьте, что ключ действующий и скопирован целиком, без пробелов и переносов. Расчёт это не затрагивает: все числа считаются без модели.';
+  if (status === 403)
+    return 'Доступ запрещён (403). Обычно это регион или ограничение проекта у провайдера. Расчёт это не затрагивает.';
+  if (status === 404)
+    return 'Модель или адрес не найдены (404). Проверьте название модели и адрес в настройках.';
+  if (status === 429)
+    return 'Превышен лимит запросов или исчерпан баланс (429). Расчёт это не затрагивает.';
+  if (status >= 500) return `Провайдер временно недоступен (${status}). Расчёт это не затрагивает.`;
+  return `Модель ответила ошибкой ${status}. ${detail}`;
+}
+
 export function loadLlmSettings(): LlmSettings | null {
   try {
     const raw = localStorage.getItem(KEY_STORAGE);
     if (!raw) return null;
     const parsed = JSON.parse(raw) as LlmSettings;
-    return parsed.apiKey ? { ...DEFAULT_LLM, ...parsed } : null;
+    if (!parsed.apiKey?.trim()) return null;
+    return { ...DEFAULT_LLM, ...parsed, apiKey: parsed.apiKey.trim() };
   } catch {
     return null;
   }
@@ -119,7 +138,17 @@ export function loadLlmSettings(): LlmSettings | null {
 
 export function saveLlmSettings(settings: LlmSettings | null): void {
   try {
-    if (settings) localStorage.setItem(KEY_STORAGE, JSON.stringify(settings));
+    if (settings)
+      localStorage.setItem(
+        KEY_STORAGE,
+        // вставка ключа из буфера часто тащит пробел или перенос строки — он даёт 401
+        JSON.stringify({
+          ...settings,
+          apiKey: settings.apiKey.trim(),
+          model: settings.model.trim(),
+          endpoint: settings.endpoint.trim(),
+        }),
+      );
     else localStorage.removeItem(KEY_STORAGE);
   } catch {
     /* приватный режим браузера */

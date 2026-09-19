@@ -118,6 +118,7 @@ export function comparisonCsv(evaluations: Evaluation[]): string {
       shortage_total_t: round(e.shortage_total_t),
       end_horizon_reserve_days: round(e.end_horizon_reserve_days, 1),
       flexibility_share: round(e.flexibility_share, 3),
+      required_intake_t_per_month: round(e.required_intake_t_per_month, 1),
       failed_constraints: e.checks
         .filter((c) => !c.passed && c.role === 'hard')
         .map((c) => `${c.constraint_id}${c.year ? `:${c.year}` : ''}`)
