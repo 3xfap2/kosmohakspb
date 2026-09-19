@@ -232,6 +232,40 @@ input[type='range'] {
   gap: 18px;
 }
 
+/* Появление содержимого при переключении раздела: короткое и без сдвига макета,
+   поэтому не мешает быстрым кликам и не «прыгает» на длинных вкладках. */
+@keyframes tab-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.stack > * {
+  animation: tab-in 0.22s ease-out both;
+}
+
+/* Лёгкая лесенка: первые карточки появляются чуть раньше следующих */
+.stack > *:nth-child(2) {
+  animation-delay: 0.03s;
+}
+
+.stack > *:nth-child(3) {
+  animation-delay: 0.06s;
+}
+
+.stack > *:nth-child(n + 4) {
+  animation-delay: 0.09s;
+}
+
+.tabs button {
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
 .card {
   background: linear-gradient(180deg, rgba(203, 255, 252, 0.035), rgba(203, 255, 252, 0) 140px), var(--kelp);
   border: 1px solid var(--line);
@@ -709,6 +743,10 @@ button.primary {
 
 @media (prefers-reduced-motion: reduce) {
   .sphere {
+    animation: none;
+  }
+
+  .stack > * {
     animation: none;
   }
 }

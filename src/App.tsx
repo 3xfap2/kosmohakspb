@@ -74,8 +74,12 @@ export default function App() {
     : null;
   const [account, setAccount] = useState<Account | null>(() => currentAccount());
   const [screen, setScreen] = useState<'landing' | 'auth' | 'app'>(() => {
+    // Открываем посадочную всегда, даже если сессия сохранена: по ссылке приходит
+    // проверяющий, и первым он должен увидеть, что это за решение, а не чужое
+    // рабочее состояние. Исключение — ссылка на конкретный расчёт: по ней
+    // переходят именно ради плана, посадочная тут только мешает.
     if (readStateFromUrl() && currentAccount()) return 'app';
-    return currentAccount() ? 'app' : 'landing';
+    return 'landing';
   });
 
   const [tab, setTab] = useState<TabId>((shared?.tab as TabId) ?? 'overview');
@@ -437,7 +441,8 @@ export default function App() {
 
       {note && <p className="muted small-text note-line">{note}</p>}
 
-      <main className="stack">
+      {/* key по разделу: React пересоздаёт поддерево, и появление проигрывается заново */}
+      <main className="stack" key={tab}>
         <Active {...props} />
       </main>
 

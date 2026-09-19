@@ -70,9 +70,12 @@ export function Overview({ evaluation, plan, strategies, t }: TabProps) {
   const [traceYear, setTraceYear] = useState<number | null>(null);
   const trace = useMemo(() => (traceYear ? explainYear(evaluation, traceYear) : null), [evaluation, traceYear]);
   const worstYear = [...result.years].sort((a, b) => a.service_total - b.service_total)[0];
-  // База для сравнения — стратегия «ничего не строим»: она уже есть в переборе,
-  // и разница с ней показывает, что именно дали инвестиционные решения.
+  // База для сравнения — стратегия «ничего не строим». Обе стороны берём из перебора,
+  // пересчитанного под текущие сценарий и вариант спроса: сравнивать выбранный план
+  // (он мог быть собран под другие условия) с эталоном текущих условий нельзя —
+  // получится, что инвестиции удорожают план, хотя дело в разных условиях.
   const noInvest = strategies.find((e) => e.plan.decisions.investments.length === 0);
+  const bestInvest = strategies.find((e) => e.feasible && e.plan.decisions.investments.length > 0);
   const emergencyUsed = result.sources.filter((s) => s.source_id === 'E').reduce((sum, s) => sum + s.delivered_t, 0);
 
   return (
@@ -102,10 +105,10 @@ export function Overview({ evaluation, plan, strategies, t }: TabProps) {
         />
       </div>
 
-      {noInvest && noInvest.plan.plan_id !== plan.plan_id && (
+      {noInvest && bestInvest && (
         <Card
           title="Что дали инвестиционные решения"
-          subtitle="Тот же спрос и те же ограничения, но без модернизации хранения и без собственного производства. Это нижняя граница, с которой честно сравнивать выбранный план."
+          subtitle={`Обе стороны посчитаны в текущих условиях: «${bestInvest.label}» против варианта без модернизации хранения и без собственного производства. Сравнение идёт между стратегиями, а не с планом, который вы правили вручную.`}
         >
           <div className="table-scroll">
             <table>
@@ -113,7 +116,7 @@ export function Overview({ evaluation, plan, strategies, t }: TabProps) {
                 <tr>
                   <th>Показатель</th>
                   <th className="num">Без инвестиций</th>
-                  <th className="num">Выбранный план</th>
+                  <th className="num">Лучшая с инвестициями</th>
                   <th className="num">Разница</th>
                 </tr>
               </thead>
@@ -121,26 +124,26 @@ export function Overview({ evaluation, plan, strategies, t }: TabProps) {
                 <tr>
                   <td>Приведённые расходы, млн у.е.</td>
                   <td className="num">{fmt(noInvest.discounted_cost_mln)}</td>
-                  <td className="num">{fmt(totals.discounted_cost_mln)}</td>
-                  <td className="num">{fmtSigned(totals.discounted_cost_mln - noInvest.discounted_cost_mln)}</td>
+                  <td className="num">{fmt(bestInvest.discounted_cost_mln)}</td>
+                  <td className="num">{fmtSigned(bestInvest.discounted_cost_mln - noInvest.discounted_cost_mln)}</td>
                 </tr>
                 <tr>
                   <td>Полные расходы, млн у.е.</td>
                   <td className="num">{fmt(noInvest.total_cost_mln)}</td>
-                  <td className="num">{fmt(totals.total_cost_mln)}</td>
-                  <td className="num">{fmtSigned(totals.total_cost_mln - noInvest.total_cost_mln)}</td>
+                  <td className="num">{fmt(bestInvest.total_cost_mln)}</td>
+                  <td className="num">{fmtSigned(bestInvest.total_cost_mln - noInvest.total_cost_mln)}</td>
                 </tr>
                 <tr>
                   <td>CAPEX, млн у.е.</td>
                   <td className="num">{fmt(noInvest.capex_mln)}</td>
-                  <td className="num">{fmt(totals.capex_mln)}</td>
-                  <td className="num">{fmtSigned(totals.capex_mln - noInvest.capex_mln)}</td>
+                  <td className="num">{fmt(bestInvest.capex_mln)}</td>
+                  <td className="num">{fmtSigned(bestInvest.capex_mln - noInvest.capex_mln)}</td>
                 </tr>
                 <tr>
                   <td>Тонна обслуженного спроса, млн у.е.</td>
                   <td className="num">{fmt(noInvest.result.totals.cost_per_served_t, 2)}</td>
-                  <td className="num">{fmt(totals.cost_per_served_t, 2)}</td>
-                  <td className="num">{fmtSigned(totals.cost_per_served_t - noInvest.result.totals.cost_per_served_t, 2)}</td>
+                  <td className="num">{fmt(bestInvest.result.totals.cost_per_served_t, 2)}</td>
+                  <td className="num">{fmtSigned(bestInvest.result.totals.cost_per_served_t - noInvest.result.totals.cost_per_served_t, 2)}</td>
                 </tr>
               </tbody>
             </table>
