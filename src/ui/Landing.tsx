@@ -22,22 +22,16 @@ function Orbit() {
     <div className="lp-orbit" aria-hidden="true">
       <svg viewBox="0 0 520 520">
         <defs>
-          <radialGradient id="core" cx="50%" cy="50%">
-            <stop offset="0%" stopColor="#cbfffc" stopOpacity="0.95" />
-            <stop offset="45%" stopColor="#00827c" stopOpacity="0.55" />
-            <stop offset="100%" stopColor="#011d1c" stopOpacity="0" />
-          </radialGradient>
           <linearGradient id="arc" x1="0" y1="0" x2="1" y2="1">
             <stop offset="0%" stopColor="#cbfffc" stopOpacity="0.9" />
             <stop offset="100%" stopColor="#00827c" stopOpacity="0.1" />
           </linearGradient>
         </defs>
 
+        {/* Два тонких кольца как чертёжная разметка. Четыре кольца со свечением
+            были чистым украшением и перетягивали внимание с карточки плана. */}
         <circle cx="260" cy="260" r="235" className="ring" />
         <circle cx="260" cy="260" r="186" className="ring dashed" />
-        <circle cx="260" cy="260" r="138" className="ring" />
-        <circle cx="260" cy="260" r="92" className="ring dashed" />
-        <circle cx="260" cy="260" r="150" fill="url(#core)" />
 
         <g className="orbit-spin">
           <circle cx="260" cy="25" r="5" fill="#cbfffc" />
@@ -98,18 +92,17 @@ export function Landing({ onEnter }: { onEnter: () => void }) {
               <b>2035–2040</b> цислунарная транспортная система
             </span>
             <h1 className="lp-h1">
-              Топливо на орбите
-              <br />
-              <em>под полным контролем</em>
+              Сколько топлива возить, откуда и <em>что под это строить</em>
             </h1>
             <p className="lp-sub">
-              Оператор задаёт поставки, резервы и инвестиции — контур считает материальный баланс по месяцам,
-              экономику, риски и проверяет каждое ограничение кейса. Без предположений на словах.
+              Рабочее место оператора орбитального топливного узла на 2035–2040 годы. Вы задаёте объёмы заказа,
+              резервы мощности и инвестиционные решения — контур считает материальный баланс помесячно, платежи по
+              договорам, риски и проверяет каждое ограничение кейса на каждом году.
             </p>
 
             <div className="lp-cta">
               <button className="lp-btn" onClick={onEnter}>
-                Открыть рабочее место →
+                Открыть рабочее место
               </button>
               <button className="lp-btn secondary" onClick={onEnter}>
                 Войти как гость
@@ -158,7 +151,7 @@ export function Landing({ onEnter }: { onEnter: () => void }) {
 
         <section className="lp-section" id="what">
           <div className="lp-kicker">Возможности</div>
-          <h2 className="lp-h2">Всё, что оператор проверяет перед подписью контракта</h2>
+          <h2 className="lp-h2">Что именно считает контур</h2>
 
           <div className="lp-bento">
             <article className="lp-tile wide reveal">
@@ -220,7 +213,7 @@ export function Landing({ onEnter }: { onEnter: () => void }) {
 
         <section className="lp-section" id="how">
           <div className="lp-kicker">Как работает</div>
-          <h2 className="lp-h2">От решения оператора до проверенного плана</h2>
+          <h2 className="lp-h2">Путь от решения оператора до проверенного плана</h2>
 
           <div className="lp-steps">
             <div className="lp-step reveal">
@@ -273,7 +266,7 @@ export function Landing({ onEnter }: { onEnter: () => void }) {
         </section>
 
         <section className="lp-final reveal">
-          <h2>Откройте контур и проверьте план на прочность</h2>
+          <h2>Откройте контур и проверьте любое число</h2>
           <p>
             Гостевой доступ открывает все расчёты без регистрации. Планы хранятся в браузере, данные никуда не
             уходят.

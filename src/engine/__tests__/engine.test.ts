@@ -242,3 +242,27 @@ describe('Начальный запас подготовительного пе�
     expect(first(a).reservation_mln).toBeGreaterThan(first(b).reservation_mln);
   });
 });
+
+describe('Неполный контрактный период', () => {
+  // Правило кейса: контрактный период — календарный год либо его часть. Если канал
+  // вводится внутри года, плата за резервирование начисляется только на оставшуюся часть.
+  it('плата за резервирование пропорциональна доступной части года', () => {
+    const plan = planWith((p) => {
+      p.assumptions.lead_time_policy = 'min';
+      p.decisions.investments.push({ investment_id: 'EARTH_NEW', decision_year: 2035, exercise_year: 2035 });
+      p.decisions.capacity_reservations.push({ source_id: 'C', year: 2036, capacity_t_per_year: 40 });
+      p.decisions.capacity_reservations.push({ source_id: 'C', year: 2037, capacity_t_per_year: 40 });
+      p.decisions.supply_orders.push({ source_id: 'C', year: 2036, volume_t: 40 });
+      p.decisions.supply_orders.push({ source_id: 'C', year: 2037, volume_t: 40 });
+    });
+    const result = simulate(plan, { scenario_id: 'BASE' });
+    const partial = result.sources.find((r) => r.source_id === 'C' && r.year === 2036)!;
+    const full = result.sources.find((r) => r.source_id === 'C' && r.year === 2037)!;
+
+    // 18 месяцев от исполнения опциона в 2035 году: канал доступен с середины 2036-го
+    expect(partial.available_fraction).toBeCloseTo(0.5, 3);
+    expect(full.available_fraction).toBe(1);
+    // за неполный год платим половину того, что за полный при том же резерве
+    expect(partial.reservation_payment_mln).toBeCloseTo(full.reservation_payment_mln * 0.5, 6);
+  });
+});
