@@ -13,14 +13,14 @@ export const THEMES: { id: ThemeId; label: string; note: string }[] = [
 
 const CHART_THEMES = {
   contour: {
-    surface: '#003734',
-    plane: '#012624',
+    surface: '#101b1e',
+    plane: '#0c1417',
     text: '#ffffff',
-    text2: '#bbc7c6',
-    muted: '#7f9b99',
-    grid: '#0b4a46',
-    axis: '#13615a',
-    mint: '#cbfffc',
+    text2: '#c3ced0',
+    muted: '#8a9a9d',
+    grid: '#1e3034',
+    axis: '#2b4247',
+    mint: '#8ce8e4',
     ok: '#7ef0d0',
     bad: '#ff9270',
     series: ['#3987e5', '#d95926', '#199e70', '#c98500', '#d55181'],

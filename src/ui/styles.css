@@ -5,20 +5,22 @@
 :root {
   color-scheme: dark;
 
-  --abyss: #011d1c;
-  --deep: #012624;
-  --kelp: #003734;
-  --kelp-hi: #00463f;
-  --line: rgba(187, 199, 198, 0.14);
-  --line-soft: rgba(187, 199, 198, 0.08);
+  /* Фоны почти нейтральные, с лёгким холодным уходом. Насыщенность отдана
+     акценту: тёмная поверхность в полную насыщенность выглядит болотной. */
+  --abyss: #080f11;
+  --deep: #0c1417;
+  --kelp: #101b1e;
+  --kelp-hi: #18282c;
+  --line: rgba(196, 210, 213, 0.15);
+  --line-soft: rgba(196, 210, 213, 0.08);
 
   --ink: #ffffff;
-  --ink-2: #bbc7c6;
-  --ink-3: #7f9b99;
+  --ink-2: #c3ced0;
+  --ink-3: #8a9a9d;
 
-  --mint: #cbfffc;
-  --teal: #00827c;
-  --accent-grad: linear-gradient(90deg, #00827c 0%, #cbfffc 100%);
+  --mint: #8ce8e4;
+  --teal: #0f7a78;
+  --accent-grad: linear-gradient(90deg, #0d6f74 0%, #8ce8e4 100%);
   --aurora: linear-gradient(90deg, #cbfffc 0%, #edfffe 26%, #fffdfa 48%, #fad1ff 89%);
 
   --ok: #7ef0d0;
@@ -42,8 +44,8 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    radial-gradient(900px 500px at 12% -10%, rgba(0, 130, 124, 0.32), transparent 60%),
-    radial-gradient(700px 400px at 95% 0%, rgba(203, 255, 252, 0.08), transparent 55%),
+    radial-gradient(1000px 560px at 12% -12%, rgba(24, 108, 124, 0.20), transparent 62%),
+    radial-gradient(760px 420px at 96% -4%, rgba(140, 232, 228, 0.05), transparent 58%),
     var(--abyss);
   background-attachment: fixed;
 }
