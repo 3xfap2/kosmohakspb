@@ -1,0 +1,181 @@
+profile,weights,strategy,score,excluded_reason,cost_mln,service,capex_mln
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2036 + ISRU 2037,0.911,,8715,1,1430
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2037 + ISRU 2037,0.905,,8725,1,1430
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ISRU 2037,0.883,,8801,1,1250
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2036 + ISRU 2036,0.869,,8792,1,1430
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2037 + ISRU 2036,0.863,,8801,1,1430
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ISRU 2036,0.841,,8877,1,1250
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2036 + ISRU 2037 + Earth-New 2036/2037,0.731,,8907,1,1790
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2037 + ISRU 2037 + Earth-New 2036/2037,0.725,,8916,1,1790
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2036 + ISRU 2037 + Earth-New 2035/2036,0.718,,8929,1,1790
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2037 + ISRU 2037 + Earth-New 2035/2036,0.712,,8939,1,1790
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2036 + ISRU 2037 + Earth-New 2035/2035,0.711,,8933,1,1790
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ISRU 2037 + Earth-New 2036/2037,0.708,,8962,1,1610
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2037 + ISRU 2037 + Earth-New 2035/2035,0.705,,8942,1,1790
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ISRU 2037 + Earth-New 2035/2036,0.696,,8984,1,1610
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ISRU 2037 + Earth-New 2035/2035,0.691,,8978,1,1610
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2036 + ISRU 2036 + Earth-New 2036/2037,0.689,,8983,1,1790
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2037 + ISRU 2036 + Earth-New 2036/2037,0.683,,8993,1,1790
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2036 + ISRU 2036 + Earth-New 2035/2036,0.676,,9006,1,1790
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2037 + ISRU 2036 + Earth-New 2035/2036,0.67,,9015,1,1790
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2036 + Earth-New 2035/2036,0.67,,8907,1,540
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2036 + ISRU 2036 + Earth-New 2035/2035,0.669,,9009,1,1790
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ISRU 2036 + Earth-New 2036/2037,0.666,,9038,1,1610
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2036 + Earth-New 2036/2037,0.666,,8981,1,540
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2037 + Earth-New 2035/2036,0.664,,8916,1,540
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2037 + ISRU 2036 + Earth-New 2035/2035,0.663,,9019,1,1790
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2036 + Earth-New 2035/2035,0.663,,8910,1,540
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2037 + Earth-New 2036/2037,0.661,,8991,1,540
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2037 + Earth-New 2035/2035,0.657,,8920,1,540
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ISRU 2036 + Earth-New 2035/2036,0.654,,9061,1,1610
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ISRU 2036 + Earth-New 2035/2035,0.649,,9054,1,1610
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,Earth-New 2035/2036,0.645,,8998,1,360
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,Earth-New 2035/2035,0.64,,8991,1,360
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,Earth-New 2036/2037,0.638,,9084,1,360
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2036,0.588,,9297,1,180
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,ZBO 2037,0.582,,9306,1,180
+Оператор узла,cost:0.35 service:0.25 flexibility:0.2 capex:0.1 resilience:0.1,Без инвестиций,0.53,,9353,1,0
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2036 + ISRU 2037,0.956,,8715,1,1430
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2037 + ISRU 2037,0.954,,8725,1,1430
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ISRU 2037,0.952,,8801,1,1250
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2036 + ISRU 2036,0.944,,8792,1,1430
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2037 + ISRU 2036,0.942,,8801,1,1430
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ISRU 2036,0.94,,8877,1,1250
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2036 + ISRU 2037 + Earth-New 2036/2037,0.888,,8907,1,1790
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2037 + ISRU 2037 + Earth-New 2036/2037,0.886,,8916,1,1790
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2036 + ISRU 2037 + Earth-New 2035/2036,0.884,,8929,1,1790
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ISRU 2037 + Earth-New 2036/2037,0.883,,8962,1,1610
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2037 + ISRU 2037 + Earth-New 2035/2036,0.882,,8939,1,1790
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2036 + ISRU 2037 + Earth-New 2035/2035,0.881,,8933,1,1790
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ISRU 2037 + Earth-New 2035/2036,0.88,,8984,1,1610
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2037 + ISRU 2037 + Earth-New 2035/2035,0.879,,8942,1,1790
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ISRU 2037 + Earth-New 2035/2035,0.876,,8978,1,1610
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2036 + ISRU 2036 + Earth-New 2036/2037,0.876,,8983,1,1790
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2037 + ISRU 2036 + Earth-New 2036/2037,0.874,,8993,1,1790
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2036 + ISRU 2036 + Earth-New 2035/2036,0.872,,9006,1,1790
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ISRU 2036 + Earth-New 2036/2037,0.871,,9038,1,1610
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2037 + ISRU 2036 + Earth-New 2035/2036,0.87,,9015,1,1790
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2036 + ISRU 2036 + Earth-New 2035/2035,0.869,,9009,1,1790
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ISRU 2036 + Earth-New 2035/2036,0.868,,9061,1,1610
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2037 + ISRU 2036 + Earth-New 2035/2035,0.867,,9019,1,1790
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ISRU 2036 + Earth-New 2035/2035,0.865,,9054,1,1610
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2036 + Earth-New 2036/2037,0.864,,8981,1,540
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2037 + Earth-New 2036/2037,0.863,,8991,1,540
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,Earth-New 2036/2037,0.862,,9084,1,360
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2036 + Earth-New 2035/2036,0.857,,8907,1,540
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2037 + Earth-New 2035/2036,0.856,,8916,1,540
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,Earth-New 2035/2036,0.856,,8998,1,360
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2036 + Earth-New 2035/2035,0.854,,8910,1,540
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2037 + Earth-New 2035/2035,0.853,,8920,1,540
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,Earth-New 2035/2035,0.852,,8991,1,360
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2036,0.729,,9297,1,180
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,ZBO 2037,0.727,,9306,1,180
+Критические потребители,cost:0.1 service:0.45 flexibility:0.1 capex:0.05 resilience:0.3,Без инвестиций,0.59,,9353,1,0
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2036 + ISRU 2037,0.953,,8715,1,1430
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2037 + ISRU 2037,0.945,,8725,1,1430
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ISRU 2037,0.898,,8801,1,1250
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2036 + ISRU 2036,0.894,,8792,1,1430
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2037 + ISRU 2036,0.886,,8801,1,1430
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ISRU 2036,0.838,,8877,1,1250
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2036 + ISRU 2037 + Earth-New 2036/2037,0.751,,8907,1,1790
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2037 + ISRU 2037 + Earth-New 2036/2037,0.744,,8916,1,1790
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2036 + ISRU 2037 + Earth-New 2035/2036,0.734,,8929,1,1790
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2036 + ISRU 2037 + Earth-New 2035/2035,0.727,,8933,1,1790
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2037 + ISRU 2037 + Earth-New 2035/2036,0.726,,8939,1,1790
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2037 + ISRU 2037 + Earth-New 2035/2035,0.719,,8942,1,1790
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ISRU 2037 + Earth-New 2036/2037,0.712,,8962,1,1610
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ISRU 2037 + Earth-New 2035/2036,0.694,,8984,1,1610
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ISRU 2037 + Earth-New 2035/2035,0.693,,8978,1,1610
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2036 + ISRU 2036 + Earth-New 2036/2037,0.692,,8983,1,1790
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2036 + Earth-New 2035/2036,0.689,,8907,1,540
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2037 + ISRU 2036 + Earth-New 2036/2037,0.684,,8993,1,1790
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2036 + Earth-New 2035/2035,0.682,,8910,1,540
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2037 + Earth-New 2035/2036,0.681,,8916,1,540
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2037 + Earth-New 2035/2035,0.674,,8920,1,540
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2036 + ISRU 2036 + Earth-New 2035/2036,0.674,,9006,1,1790
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2036 + ISRU 2036 + Earth-New 2035/2035,0.667,,9009,1,1790
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2037 + ISRU 2036 + Earth-New 2035/2036,0.666,,9015,1,1790
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2037 + ISRU 2036 + Earth-New 2035/2035,0.66,,9019,1,1790
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2036 + Earth-New 2036/2037,0.658,,8981,1,540
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ISRU 2036 + Earth-New 2036/2037,0.652,,9038,1,1610
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2037 + Earth-New 2036/2037,0.65,,8991,1,540
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ISRU 2036 + Earth-New 2035/2036,0.634,,9061,1,1610
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,Earth-New 2035/2036,0.633,,8998,1,360
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ISRU 2036 + Earth-New 2035/2035,0.633,,9054,1,1610
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,Earth-New 2035/2035,0.632,,8991,1,360
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,Earth-New 2036/2037,0.596,,9084,1,360
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2036,0.491,,9297,1,180
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,ZBO 2037,0.483,,9306,1,180
+Коммерческие потребители,cost:0.5 service:0.25 flexibility:0.15 capex:0.05 resilience:0.05,Без инвестиций,0.435,,9353,1,0
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,Earth-New 2035/2036,0.709,,8998,1,360
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,Earth-New 2035/2035,0.707,,8991,1,360
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,Earth-New 2036/2037,0.695,,9084,1,360
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2036 + Earth-New 2035/2036,0.692,,8907,1,540
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,Без инвестиций,0.69,,9353,1,0
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2037 + Earth-New 2035/2036,0.688,,8916,1,540
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2036 + Earth-New 2035/2035,0.688,,8910,1,540
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2036,0.686,,9297,1,180
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2037 + Earth-New 2035/2035,0.684,,8920,1,540
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2037,0.681,,9306,1,180
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2036 + Earth-New 2036/2037,0.681,,8981,1,540
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2037 + Earth-New 2036/2037,0.677,,8991,1,540
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ISRU 2037,0.652,,8801,1,1250
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2036 + ISRU 2037,0.636,,8715,1,1430
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2037 + ISRU 2037,0.632,,8725,1,1430
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ISRU 2036,0.622,,8877,1,1250
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2036 + ISRU 2036,0.606,,8792,1,1430
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2037 + ISRU 2036,0.602,,8801,1,1430
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ISRU 2037 + Earth-New 2036/2037,0.465,,8962,1,1610
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ISRU 2037 + Earth-New 2035/2036,0.457,,8984,1,1610
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ISRU 2037 + Earth-New 2035/2035,0.455,,8978,1,1610
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2036 + ISRU 2037 + Earth-New 2036/2037,0.443,,8907,1,1790
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2037 + ISRU 2037 + Earth-New 2036/2037,0.439,,8916,1,1790
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ISRU 2036 + Earth-New 2036/2037,0.435,,9038,1,1610
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2036 + ISRU 2037 + Earth-New 2035/2036,0.434,,8929,1,1790
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2036 + ISRU 2037 + Earth-New 2035/2035,0.43,,8933,1,1790
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2037 + ISRU 2037 + Earth-New 2035/2036,0.43,,8939,1,1790
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ISRU 2036 + Earth-New 2035/2036,0.427,,9061,1,1610
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2037 + ISRU 2037 + Earth-New 2035/2035,0.426,,8942,1,1790
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ISRU 2036 + Earth-New 2035/2035,0.425,,9054,1,1610
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2036 + ISRU 2036 + Earth-New 2036/2037,0.413,,8983,1,1790
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2037 + ISRU 2036 + Earth-New 2036/2037,0.409,,8993,1,1790
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2036 + ISRU 2036 + Earth-New 2035/2036,0.404,,9006,1,1790
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2036 + ISRU 2036 + Earth-New 2035/2035,0.4,,9009,1,1790
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2037 + ISRU 2036 + Earth-New 2035/2036,0.4,,9015,1,1790
+Финансирующая сторона,cost:0.25 service:0.15 flexibility:0.1 capex:0.45 resilience:0.05,ZBO 2037 + ISRU 2036 + Earth-New 2035/2035,0.396,,9019,1,1790
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2036 + ISRU 2037,0.918,,8715,1,1430
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2037 + ISRU 2037,0.915,,8725,1,1430
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ISRU 2037,0.91,,8801,1,1250
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2036 + ISRU 2036,0.9,,8792,1,1430
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2037 + ISRU 2036,0.897,,8801,1,1430
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ISRU 2036,0.892,,8877,1,1250
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2036 + Earth-New 2035/2036,0.876,,8907,1,540
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2036 + Earth-New 2035/2035,0.874,,8910,1,540
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2037 + Earth-New 2035/2036,0.873,,8916,1,540
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2037 + Earth-New 2035/2035,0.871,,8920,1,540
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,Earth-New 2035/2036,0.868,,8998,1,360
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,Earth-New 2035/2035,0.868,,8991,1,360
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2036 + Earth-New 2036/2037,0.868,,8981,1,540
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2037 + Earth-New 2036/2037,0.865,,8991,1,540
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,Earth-New 2036/2037,0.858,,9084,1,360
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2036 + ISRU 2037 + Earth-New 2036/2037,0.839,,8907,1,1790
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2037 + ISRU 2037 + Earth-New 2036/2037,0.836,,8916,1,1790
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ISRU 2037 + Earth-New 2036/2037,0.835,,8962,1,1610
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2036 + ISRU 2037 + Earth-New 2035/2036,0.833,,8929,1,1790
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2036 + ISRU 2037 + Earth-New 2035/2035,0.831,,8933,1,1790
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2037 + ISRU 2037 + Earth-New 2035/2036,0.831,,8939,1,1790
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ISRU 2037 + Earth-New 2035/2036,0.83,,8984,1,1610
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ISRU 2037 + Earth-New 2035/2035,0.83,,8978,1,1610
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2037 + ISRU 2037 + Earth-New 2035/2035,0.829,,8942,1,1790
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2036 + ISRU 2036 + Earth-New 2036/2037,0.821,,8983,1,1790
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2037 + ISRU 2036 + Earth-New 2036/2037,0.818,,8993,1,1790
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ISRU 2036 + Earth-New 2036/2037,0.817,,9038,1,1610
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2036 + ISRU 2036 + Earth-New 2035/2036,0.815,,9006,1,1790
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2036 + ISRU 2036 + Earth-New 2035/2035,0.813,,9009,1,1790
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2037 + ISRU 2036 + Earth-New 2035/2036,0.813,,9015,1,1790
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ISRU 2036 + Earth-New 2035/2036,0.812,,9061,1,1610
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ISRU 2036 + Earth-New 2035/2035,0.812,,9054,1,1610
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2037 + ISRU 2036 + Earth-New 2035/2035,0.811,,9019,1,1790
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2036,0.578,,9297,1,180
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,ZBO 2037,0.575,,9306,1,180
+Поставщики,cost:0.15 service:0.2 flexibility:0.05 capex:0.1 resilience:0.5,Без инвестиций,0.345,,9353,1,0

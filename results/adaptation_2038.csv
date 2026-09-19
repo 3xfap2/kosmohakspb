@@ -1,0 +1,5 @@
+option_id,label,first_effective_year,added_volume_t,delta_cost_mln,shortage_after_t,service_after,feasible,failed_constraints,note
+KEEP,Сохранить исходную стратегию,,0,0,170,0.8124,false,RESERVE_45D:2038 RESERVE_45D:2039 RESERVE_45D:2040,"Ничего не меняем: издержек нет, но дефицит остаётся"
+ADAPT_B,Добрать объёмы через Earth-Flex,2038,142.3,1555.8,29.4,0.9345,false,RESERVE_45D:2038 RESERVE_45D:2039 RESERVE_45D:2040,Реакция возможна с 2038 года: lead time 4–4 month
+ADAPT_E,Добрать объёмы через Emergency,2038,178.5,2537,0,1,false,RESERVE_45D:2038 RESERVE_45D:2039 RESERVE_45D:2040,Реакция возможна с 2038 года: lead time 6–6 week
+ADAPT_A,Добрать объёмы через Earth-Core,2039,0,0,170,0.8124,false,RESERVE_45D:2038 RESERVE_45D:2039 RESERVE_45D:2040,Свободной мощности канала не осталось: адаптация невозможна

@@ -1,0 +1,142 @@
+{
+  "plan_id": "ZBO2036+LUNAR_ISRU2037+EARTH_NEW20362037__BASE",
+  "scenario_id": "BASE",
+  "decisions": {
+    "supply_orders": [
+      {
+        "source_id": "A",
+        "year": 2035,
+        "volume_t": 109.9
+      },
+      {
+        "source_id": "A",
+        "year": 2036,
+        "volume_t": 147.9
+      },
+      {
+        "source_id": "A",
+        "year": 2037,
+        "volume_t": 190
+      },
+      {
+        "source_id": "B",
+        "year": 2037,
+        "volume_t": 9.8
+      },
+      {
+        "source_id": "D",
+        "year": 2038,
+        "volume_t": 100
+      },
+      {
+        "source_id": "A",
+        "year": 2038,
+        "volume_t": 161.8
+      },
+      {
+        "source_id": "D",
+        "year": 2039,
+        "volume_t": 120
+      },
+      {
+        "source_id": "A",
+        "year": 2039,
+        "volume_t": 190
+      },
+      {
+        "source_id": "C",
+        "year": 2039,
+        "volume_t": 22.6
+      },
+      {
+        "source_id": "D",
+        "year": 2040,
+        "volume_t": 120
+      },
+      {
+        "source_id": "A",
+        "year": 2040,
+        "volume_t": 190
+      },
+      {
+        "source_id": "C",
+        "year": 2040,
+        "volume_t": 84.7
+      }
+    ],
+    "capacity_reservations": [
+      {
+        "source_id": "A",
+        "year": 2035,
+        "capacity_t_per_year": 109.9
+      },
+      {
+        "source_id": "A",
+        "year": 2036,
+        "capacity_t_per_year": 147.9
+      },
+      {
+        "source_id": "A",
+        "year": 2037,
+        "capacity_t_per_year": 190
+      },
+      {
+        "source_id": "B",
+        "year": 2037,
+        "capacity_t_per_year": 9.8
+      },
+      {
+        "source_id": "A",
+        "year": 2038,
+        "capacity_t_per_year": 161.8
+      },
+      {
+        "source_id": "A",
+        "year": 2039,
+        "capacity_t_per_year": 190
+      },
+      {
+        "source_id": "C",
+        "year": 2039,
+        "capacity_t_per_year": 22.6
+      },
+      {
+        "source_id": "A",
+        "year": 2040,
+        "capacity_t_per_year": 190
+      },
+      {
+        "source_id": "C",
+        "year": 2040,
+        "capacity_t_per_year": 84.7
+      }
+    ],
+    "investments": [
+      {
+        "investment_id": "ZBO",
+        "decision_year": 2036
+      },
+      {
+        "investment_id": "LUNAR_ISRU",
+        "decision_year": 2037
+      },
+      {
+        "investment_id": "EARTH_NEW",
+        "decision_year": 2036,
+        "exercise_year": 2037
+      }
+    ],
+    "inventory_policy": {
+      "opening_inventory_t": 12.4,
+      "opening_source_id": "A",
+      "delivery_profile": "even"
+    }
+  },
+  "assumptions": {
+    "discount_rate": 0.07,
+    "discount_t0": 2035,
+    "lead_time_policy": "max",
+    "emergency_base_share": 0.5,
+    "require_reservation_for_orders": true
+  }
+}

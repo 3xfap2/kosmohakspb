@@ -1,0 +1,37 @@
+strategy,cost_BASE,cost_STRESS,cost_LOW,cost_HIGH,feasible_BASE,feasible_STRESS,feasible_LOW,feasible_HIGH,regret_BASE,regret_STRESS,regret_LOW,regret_HIGH,max_regret,feasible_everywhere
+ZBO 2036 + ISRU 2037 + Earth-New 2036/2037,8907,10855,7234,10780,true,true,true,true,192,293,316,60,316,true
+ZBO 2037 + ISRU 2037 + Earth-New 2036/2037,8916,10865,7237,10792,true,true,true,true,201,302,320,72,320,true
+ZBO 2036 + ISRU 2037 + Earth-New 2035/2036,8929,10652,7256,10752,true,true,true,true,214,90,339,32,339,true
+ZBO 2037 + ISRU 2037 + Earth-New 2035/2036,8939,10662,7259,10765,true,true,true,true,224,99,342,45,342,true
+ZBO 2036 + ISRU 2037 + Earth-New 2035/2035,8933,10649,7274,10720,true,true,true,true,218,86,356,0,356,true
+ZBO 2037 + ISRU 2037 + Earth-New 2035/2035,8942,10659,7277,10733,true,true,true,true,227,96,360,13,360,true
+ZBO 2036 + ISRU 2036 + Earth-New 2036/2037,8983,10932,7310,10856,true,true,true,true,268,369,393,136,393,true
+ZBO 2036 + Earth-New 2035/2035,8910,10563,7090,11113,true,true,true,true,195,0,173,393,393,true
+ZBO 2037 + ISRU 2036 + Earth-New 2036/2037,8993,10941,7314,10869,true,true,true,true,278,379,396,149,396,true
+ZBO 2037 + Earth-New 2035/2035,8920,10572,7094,11126,true,true,true,true,205,9,176,406,406,true
+ZBO 2036 + ISRU 2036 + Earth-New 2035/2036,9006,10729,7333,10829,true,true,true,true,291,166,415,108,415,true
+ZBO 2037 + ISRU 2036 + Earth-New 2035/2036,9015,10738,7336,10841,true,true,true,true,300,176,418,121,418,true
+ZBO 2036 + Earth-New 2035/2036,8907,10566,7073,11145,true,true,true,true,192,3,155,425,425,true
+ZBO 2036 + ISRU 2036 + Earth-New 2035/2035,9009,10725,7350,10796,true,true,true,true,294,163,433,76,433,true
+ZBO 2037 + ISRU 2036 + Earth-New 2035/2035,9019,10735,7354,10809,true,true,true,true,304,172,436,89,436,true
+ZBO 2037 + Earth-New 2035/2036,8916,10575,7076,11158,true,true,true,true,201,13,158,438,438,true
+ZBO 2036 + ISRU 2037,8715,11132,6921,11013,true,true,true,true,0,569,3,293,569,true
+ZBO 2037 + ISRU 2037,8725,11141,6924,11025,true,true,true,true,9,579,6,305,579,true
+ZBO 2036 + ISRU 2036,8792,11208,6997,11089,true,true,true,true,76,646,80,369,646,true
+ZBO 2037 + ISRU 2036,8801,11218,7000,11102,true,true,true,true,86,655,83,382,655,true
+ZBO 2036 + Earth-New 2036/2037,8981,10909,7076,11411,true,true,true,true,266,347,159,691,691,true
+ZBO 2037 + Earth-New 2036/2037,8991,10919,7080,11424,true,true,true,true,276,356,162,704,704,true
+ISRU 2037,8801,11381,6918,11177,true,false,true,true,86,,0,457,неисполнима везде,false
+ISRU 2036,8877,11458,6994,11254,true,false,true,true,162,,76,534,неисполнима везде,false
+ISRU 2037 + Earth-New 2036/2037,8962,11005,7218,10933,true,false,true,true,247,,300,213,неисполнима везде,false
+ISRU 2037 + Earth-New 2035/2035,8978,10762,7258,10847,true,false,true,true,263,,340,127,неисполнима везде,false
+ISRU 2037 + Earth-New 2035/2036,8984,10775,7240,10890,true,false,true,true,269,,323,170,неисполнима везде,false
+Earth-New 2035/2035,8991,10763,7092,11331,true,false,true,true,276,,174,611,неисполнима везде,false
+Earth-New 2035/2036,8998,10777,7074,11374,true,false,true,true,283,,157,654,неисполнима везде,false
+ISRU 2036 + Earth-New 2036/2037,9038,11081,7294,11010,true,false,true,true,323,,377,290,неисполнима везде,false
+ISRU 2036 + Earth-New 2035/2035,9054,10839,7334,10924,true,false,true,true,339,,417,204,неисполнима везде,false
+ISRU 2036 + Earth-New 2035/2036,9061,10852,7317,10967,true,false,true,true,346,,399,247,неисполнима везде,false
+Earth-New 2036/2037,9084,11171,7088,11687,true,false,true,true,369,,170,967,неисполнима везде,false
+ZBO 2036,9297,10987,7058,10761,true,false,true,false,582,,140,,неисполнима везде,false
+ZBO 2037,9306,10997,7061,10774,true,false,true,false,591,,144,,неисполнима везде,false
+Без инвестиций,9353,10970,7125,10767,true,false,true,false,638,,208,,неисполнима везде,false

@@ -1,0 +1,29 @@
+{
+  "name": "kosmokontur-2035",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "results": "vite-node tools/generate-results.ts"
+  },
+  "dependencies": {
+    "js-yaml": "^5.4.2",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "recharts": "^3.10.1"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0",
+    "vite-node": "^6.0.0",
+    "vitest": "^5.0.1"
+  }
+}

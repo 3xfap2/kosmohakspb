@@ -1,0 +1,7 @@
+learn_year,closes_regular,closes_any,cheapest_label,cheapest_cost_mln,cheapest_feasible,cheapest_blocking,residual_shortage_t
+2035,false,true,Добрать объёмы через Emergency,2537,false,RESERVE_45D:2038 RESERVE_45D:2039 RESERVE_45D:2040,0
+2036,false,true,Добрать объёмы через Emergency,2537,false,RESERVE_45D:2038 RESERVE_45D:2039 RESERVE_45D:2040,0
+2037,false,true,Добрать объёмы через Emergency,2537,false,RESERVE_45D:2038 RESERVE_45D:2039 RESERVE_45D:2040,0
+2038,false,true,Добрать объёмы через Emergency,2537,false,RESERVE_45D:2038 RESERVE_45D:2039 RESERVE_45D:2040,0
+2039,false,false,,,,,42.4
+2040,false,false,,,,,111.5

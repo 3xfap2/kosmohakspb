@@ -1,0 +1,5 @@
+decision_scenario,scenario_id,variant,strategy,discounted_cost_mln,total_cost_mln,capex_mln,min_service_total,shortage_total_t,feasible,failed_constraints
+BASE,BASE,base,ZBO 2036 + ISRU 2037 + Earth-New 2036/2037,8907,10761,1790,1,0,true,
+STRESS,MANDATORY_STRESS,base,ZBO 2036 + ISRU 2037 + Earth-New 2036/2037,10855,13260,1790,1,0,true,
+LOW,BASE,low,ZBO 2036 + ISRU 2037 + Earth-New 2036/2037,7234,8692,1790,1,0,true,
+HIGH,BASE,high,ZBO 2036 + ISRU 2037 + Earth-New 2036/2037,10780,13151,1790,1,0,true,

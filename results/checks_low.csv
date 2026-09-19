@@ -1,0 +1,27 @@
+constraint_id,metric,operator,threshold,unit,period,scenario_scope,role,year,actual,passed,description
+BASE_CRITICAL_SERVICE,critical_service_level,>=,0.99,share,annual,BASE,hard,2035,1,true,critical demand service minimum
+BASE_CRITICAL_SERVICE,critical_service_level,>=,0.99,share,annual,BASE,hard,2036,1,true,critical demand service minimum
+BASE_CRITICAL_SERVICE,critical_service_level,>=,0.99,share,annual,BASE,hard,2037,1,true,critical demand service minimum
+BASE_CRITICAL_SERVICE,critical_service_level,>=,0.99,share,annual,BASE,hard,2038,0.9999999999999998,true,critical demand service minimum
+BASE_CRITICAL_SERVICE,critical_service_level,>=,0.99,share,annual,BASE,hard,2039,1,true,critical demand service minimum
+BASE_CRITICAL_SERVICE,critical_service_level,>=,0.99,share,annual,BASE,hard,2040,0.9999999999999997,true,critical demand service minimum
+BASE_TOTAL_SERVICE,total_service_level,>=,0.97,share,annual,BASE,hard,2035,1,true,total demand service minimum
+BASE_TOTAL_SERVICE,total_service_level,>=,0.97,share,annual,BASE,hard,2036,0.9999999999999999,true,total demand service minimum
+BASE_TOTAL_SERVICE,total_service_level,>=,0.97,share,annual,BASE,hard,2037,1,true,total demand service minimum
+BASE_TOTAL_SERVICE,total_service_level,>=,0.97,share,annual,BASE,hard,2038,0.9999999999999999,true,total demand service minimum
+BASE_TOTAL_SERVICE,total_service_level,>=,0.97,share,annual,BASE,hard,2039,1,true,total demand service minimum
+BASE_TOTAL_SERVICE,total_service_level,>=,0.97,share,annual,BASE,hard,2040,1,true,total demand service minimum
+CAPEX_2037,cumulative_capex,<=,1800,mln_units,through_2037,ALL,hard,2037,1250,true,CAPEX through end-2037
+CAPEX_2040,cumulative_capex,<=,2800,mln_units,through_2040,ALL,hard,2040,1250,true,total CAPEX through 2040
+RESERVE_45D,reserve_equivalent_days,>=,45,days,annual,ALL,hard,2035,45.16875,true,physical stock or demonstrably equivalent contracted emergency reserve
+RESERVE_45D,reserve_equivalent_days,>=,45,days,annual,ALL,hard,2036,45.118236607142784,true,physical stock or demonstrably equivalent contracted emergency reserve
+RESERVE_45D,reserve_equivalent_days,>=,45,days,annual,ALL,hard,2037,45.22157894736832,true,physical stock or demonstrably equivalent contracted emergency reserve
+RESERVE_45D,reserve_equivalent_days,>=,45,days,annual,ALL,hard,2038,45.06563749999994,true,physical stock or demonstrably equivalent contracted emergency reserve
+RESERVE_45D,reserve_equivalent_days,>=,45,days,annual,ALL,hard,2039,45.11457031249998,true,physical stock or demonstrably equivalent contracted emergency reserve
+RESERVE_45D,reserve_equivalent_days,>=,45,days,annual,ALL,hard,2040,45.10265224358971,true,physical stock or demonstrably equivalent contracted emergency reserve
+EMERGENCY_BASE_STREAK,emergency_base_channel_consecutive_years,<=,2,years,2035_2040,ALL,hard,2035,0,true,Emergency cannot serve as the base channel for more than two consecutive years
+EMERGENCY_BASE_STREAK,emergency_base_channel_consecutive_years,<=,2,years,2035_2040,ALL,hard,2036,0,true,Emergency cannot serve as the base channel for more than two consecutive years
+EMERGENCY_BASE_STREAK,emergency_base_channel_consecutive_years,<=,2,years,2035_2040,ALL,hard,2037,0,true,Emergency cannot serve as the base channel for more than two consecutive years
+EMERGENCY_BASE_STREAK,emergency_base_channel_consecutive_years,<=,2,years,2035_2040,ALL,hard,2038,0,true,Emergency cannot serve as the base channel for more than two consecutive years
+EMERGENCY_BASE_STREAK,emergency_base_channel_consecutive_years,<=,2,years,2035_2040,ALL,hard,2039,0,true,Emergency cannot serve as the base channel for more than two consecutive years
+EMERGENCY_BASE_STREAK,emergency_base_channel_consecutive_years,<=,2,years,2035_2040,ALL,hard,2040,0,true,Emergency cannot serve as the base channel for more than two consecutive years

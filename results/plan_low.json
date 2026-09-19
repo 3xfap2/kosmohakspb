@@ -1,0 +1,113 @@
+{
+  "plan_id": "LUNAR_ISRU2037__BASE",
+  "scenario_id": "BASE",
+  "decisions": {
+    "supply_orders": [
+      {
+        "source_id": "A",
+        "year": 2035,
+        "volume_t": 87.9
+      },
+      {
+        "source_id": "A",
+        "year": 2036,
+        "volume_t": 122.5
+      },
+      {
+        "source_id": "A",
+        "year": 2037,
+        "volume_t": 165.3
+      },
+      {
+        "source_id": "D",
+        "year": 2038,
+        "volume_t": 100
+      },
+      {
+        "source_id": "A",
+        "year": 2038,
+        "volume_t": 116.7
+      },
+      {
+        "source_id": "D",
+        "year": 2039,
+        "volume_t": 120
+      },
+      {
+        "source_id": "A",
+        "year": 2039,
+        "volume_t": 155.3
+      },
+      {
+        "source_id": "D",
+        "year": 2040,
+        "volume_t": 120
+      },
+      {
+        "source_id": "A",
+        "year": 2040,
+        "volume_t": 190
+      },
+      {
+        "source_id": "B",
+        "year": 2040,
+        "volume_t": 16.7
+      }
+    ],
+    "capacity_reservations": [
+      {
+        "source_id": "A",
+        "year": 2035,
+        "capacity_t_per_year": 87.9
+      },
+      {
+        "source_id": "A",
+        "year": 2036,
+        "capacity_t_per_year": 122.5
+      },
+      {
+        "source_id": "A",
+        "year": 2037,
+        "capacity_t_per_year": 165.3
+      },
+      {
+        "source_id": "A",
+        "year": 2038,
+        "capacity_t_per_year": 116.7
+      },
+      {
+        "source_id": "A",
+        "year": 2039,
+        "capacity_t_per_year": 155.3
+      },
+      {
+        "source_id": "A",
+        "year": 2040,
+        "capacity_t_per_year": 190
+      },
+      {
+        "source_id": "B",
+        "year": 2040,
+        "capacity_t_per_year": 16.7
+      }
+    ],
+    "investments": [
+      {
+        "investment_id": "LUNAR_ISRU",
+        "decision_year": 2037
+      }
+    ],
+    "inventory_policy": {
+      "opening_inventory_t": 9.9,
+      "opening_source_id": "A",
+      "delivery_profile": "even"
+    }
+  },
+  "assumptions": {
+    "discount_rate": 0.07,
+    "discount_t0": 2035,
+    "lead_time_policy": "max",
+    "emergency_base_share": 0.5,
+    "require_reservation_for_orders": true
+  }
+}
